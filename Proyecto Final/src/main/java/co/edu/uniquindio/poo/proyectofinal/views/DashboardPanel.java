@@ -160,7 +160,7 @@ public class DashboardPanel extends JPanel {
                 " · " + updated.getTotalPoints() + " pts");
         levelLabel.revalidate();
         levelLabel.repaint();
-        
+
         // Refrescar panel de billeteras también
         for (Component c : contentPanel.getComponents()) {
             if (c instanceof WalletsPanel) {
