@@ -55,7 +55,7 @@ public class Transaction {
     public void setDescription(String description) { this.description = description; }
 
     public int calculateBasePoints() {
-        return (int) (amount / 100) * type.getPointsPerHundred();
+        return (int) (amount / 10000) * type.getPointsPerHundred();
     }
 
     @Override

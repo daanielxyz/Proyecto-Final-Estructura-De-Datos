@@ -1,10 +1,10 @@
 package co.edu.uniquindio.poo.proyectofinal.models.enums;
 
 public enum UserLevel {
-    BRONZE("Bronce", 0, 500, 0.0, 1.0),
-    SILVER("Plata", 501, 1000, 0.05, 1.1),
-    GOLD("Oro", 1001, 5000, 0.10, 1.25),
-    PLATINUM("Platino", 5001, Integer.MAX_VALUE, 0.15, 1.5);
+    BRONZE("Bronce", 0, 999, 0.0, 1.0),
+    SILVER("Plata", 1000, 4999, 0.05, 1.1),
+    GOLD("Oro", 5000, 19999, 0.10, 1.25),
+    PLATINUM("Platino", 20000, Integer.MAX_VALUE, 0.15, 1.5);
 
     private final String displayName;
     private final int minPoints;
