@@ -55,7 +55,12 @@ public class Transaction {
     public void setDescription(String description) { this.description = description; }
 
     public int calculateBasePoints() {
-        return (int) (amount / 10000) * type.getPointsPerHundred();
+        int result = (int) (amount / 10000.0) * type.getPointsPerHundred();
+        System.out.println("Calculando puntos: amount=" + amount +
+                " tipo=" + type +
+                " pointsPerHundred=" + type.getPointsPerHundred() +
+                " resultado=" + result);
+        return result;
     }
 
     @Override
